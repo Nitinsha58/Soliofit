@@ -1,0 +1,307 @@
+* { 
+	box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Inter', sans-serif;
+    font-family: 'Karla', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+html, body {
+	min-height: 100%;
+    height: 100%;
+	background: #F1F1F1;
+	color: #353535;
+}
+	
+body {
+    display: flex;
+    align-items: center;
+    padding: 10.5rem;
+    background: url('images/vector-bg1.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 200;
+}
+
+.content-container {
+    width: 60%;
+}
+
+.img-container {
+    z-index: -1;
+}
+.side-img {
+    width: 100%;
+}
+
+.logo {
+    margin-bottom: 1rem;
+}
+
+.content-container .coming-soon {
+    font-size: 2.375em;
+    font-weight: 500;
+    margin-bottom: 7px;
+}
+
+.desc, .contact {
+    font-size: 1.125em;
+}
+
+.details p {
+    width: 60%;
+    margin-bottom: 5px;
+}
+
+.content-container .contact{
+    font-size: 1em;
+}
+
+.content-img-container {
+    margin-top: auto;
+    margin-left: auto;
+    display: none;
+}
+
+.content-container .contact a{
+    font-style: none;
+    color: inherit;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.counter-container {
+    display:  grid;
+    grid-template-columns:  repeat(4, 1fr);
+    margin-top: 3.125rem;
+    width: 100%;
+    grid-gap: 2.6875em;
+}
+
+.counter-container .card {
+
+    background-color: #FBFBFB;
+    max-width: 160px;
+    border-radius: .8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    box-shadow: 5px 5px 18px rgba(0, 0, 0, 0.13), -10px -10px 30px rgba(255, 255, 255, 0.16);
+}
+
+.card .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-width: auto;
+    max-width: 160px;
+    margin: 0 1rem;
+}
+
+.time-field{
+    font-size: 4.0625rem;
+    text-align: center;
+}
+
+.field-name {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 500;
+    width: 100% !important;
+    transform: translateY(-10px);
+}
+
+
+@media (max-width: 1400px){
+    .details p {
+        width: 80%;
+    }
+}
+
+@media (max-width: 1400px){
+    body {
+        padding: 6.5rem;
+    }
+}
+
+
+/***********Desktop View(1200px)***********/
+@media (max-width:1200px){
+
+    body {
+        padding: 6.5rem;
+    }
+
+    .img-container {
+        display: none;
+    }
+    .content-container {
+        width: 100%;
+    }
+
+    .content {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .content .details {
+        margin: auto;
+    }
+
+    .content-img-container {
+        display: block;
+        margin-left: auto;
+    }
+
+    .inner-img {
+        width: 100%;
+    }
+}
+
+/***********Medium Desktop View(767px and 992px)***********/
+@media (max-width:1100px){
+    body {
+        padding: 4.5rem;
+    }
+
+    .logo {
+        width: 80%;
+    }
+}
+
+/***********Mobile medium View(566px and 767px)***********/
+@media (max-width:900px) {
+    body {
+        padding: 2.5rem;
+    }
+
+    .details p {
+        width: 90%;
+        margin-bottom: 5px;
+    }
+
+    .inner-img {
+        width: 100%;
+    }
+
+    .content-img-container {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .logo {
+        width: 90%;
+    }
+
+    .coming-soon {
+        font-size: 1.375em !important;
+    }
+
+    .time-field {
+        font-size: 3.125em;
+        font-weight: 600;
+    }
+    .field-name {
+        font-size: 1.325em;
+    }
+
+    .details p {
+        font-size: 1em;
+    }
+    .contact {
+        font-size: .9em;
+    }
+}
+
+@media (max-width: 760px) {
+    body {
+        height: fit-content;
+        padding: 2rem 1rem;
+    }
+
+    .details {
+        width: 100%;
+        margin: 0;
+    }
+
+    .logo {
+        width: 80%;
+    }
+    .coming-soon {
+        margin-bottom: 1rem;
+    }
+
+    .details p {
+        width: 80%;
+    }
+
+    .contact {
+        margin-top: 1rem;
+    }
+
+    .content-img-container {
+        width: 100%;
+        margin: 2rem 0;
+    }
+    .inner-img {
+        width: 50%;
+        margin: auto;
+    }
+
+    .counter-container {
+        margin-top: 1.125rem;
+        grid-gap: 1.6875em;
+    }
+
+    .content {
+        flex-direction: column;
+    }
+
+    .counter-container .card {
+        border-radius: .5rem;
+    }
+
+    .card .content {
+        margin: 1rem;
+    }
+
+    .time-field {
+        font-size: 2.0625em;
+    }
+
+    .field-name {
+        font-size: 14px;
+        font-weight: 500;
+        transform: translateY(0px);
+    }
+}
+
+
+/***********Mobile View(567px)***********/
+@media (max-width:566px){
+    
+    .time-field {
+        font-size: 1.5625em;
+        font-weight: 600;
+    }
+
+    .field-name {
+        font-size: 1em;
+        font-weight: 400;
+    }
+
+}
