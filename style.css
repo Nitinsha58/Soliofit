@@ -18,7 +18,7 @@ html, body {
 body {
     display: flex;
     align-items: center;
-    padding: 10.5rem;
+    padding: 4.5rem 10.5rem;
     background: url('images/vector-bg1.svg');
     background-repeat: no-repeat;
     background-size: cover;
